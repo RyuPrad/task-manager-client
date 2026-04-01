@@ -19,7 +19,7 @@ export default function Navbar({ user }) {
           <>
             <div className="avatar">
               <div className="w-8 rounded-full">
-                <img src={user.user_metadata?.avatar_url} alt="avatar" />
+                <img src={user.user_metadata?.avatar_url} alt="avatar" referrerPolicy='no-referrer'/>
               </div>
             </div>
             <span className="text-sm">{user.user_metadata?.full_name}</span>
